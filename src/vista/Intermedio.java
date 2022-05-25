@@ -28,6 +28,7 @@ public class Intermedio extends JFrame {
 		JButton btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				System.exit(WIDTH);//Te saca del program//
 			}
 		});
 		btnSalir.setBounds(342, 184, 106, 34);

@@ -73,6 +73,11 @@ public class PanelFinal extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		btnNewButton = new JButton("Salirdel juego");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(WIDTH);
+			}
+		});
 		btnNewButton.setBounds(154, 228, 125, 23);
 		contentPane.add(btnNewButton);
 		

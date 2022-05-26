@@ -16,6 +16,8 @@ import javax.swing.table.DefaultTableModel;
 import beans.Usuario;
 import controlador.Controlador;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 
 public class PanelFinal extends JFrame {
@@ -24,7 +26,8 @@ public class PanelFinal extends JFrame {
 	private JButton btnNewButto;
 	private JTable table;
 	private JLabel lblNewLabel;
-	private JButton btnNewButton;
+	private JButton btnSalirDelJuego;
+	private JButton btnModificarUsuario;
 
 	public PanelFinal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -64,7 +67,7 @@ public class PanelFinal extends JFrame {
                 }
 			}
 		});
-		btnRefrescar.setBounds(171, 194, 93, 23);
+		btnRefrescar.setBounds(119, 194, 93, 23);
 		contentPane.add(btnRefrescar);
 		
 		lblNewLabel = new JLabel("\u00DAltimo jugador que acert\u00F3 todas las preguntas");
@@ -72,16 +75,70 @@ public class PanelFinal extends JFrame {
 		lblNewLabel.setBounds(44, 171, 369, 23);
 		contentPane.add(lblNewLabel);
 		
-		btnNewButton = new JButton("Salirdel juego");
-		btnNewButton.addActionListener(new ActionListener() {
+		btnSalirDelJuego = new JButton("Salirdel juego");
+		btnSalirDelJuego.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(WIDTH);
 			}
 		});
-		btnNewButton.setBounds(154, 228, 125, 23);
-		contentPane.add(btnNewButton);
+		btnSalirDelJuego.setBounds(154, 228, 125, 23);
+		contentPane.add(btnSalirDelJuego);
 		
-	
+		btnModificarUsuario = new JButton("Modificar");
+		btnModificarUsuario.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnModificarUsuario.setBounds(235, 194, 89, 23);
+		contentPane.add(btnModificarUsuario);
+		
+		
+		
+		
+		
+		
+		
+		btnModificarUsuario.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Usuario usuario = modificarUsuarios();
+                    new Controlador().modificarUsuario(usuario);
+                    
+                    ArrayList<Usuario> usuarios = new Controlador().borrarUsuarios();
+                    
+                    //Refrescar la tabla automaticamente despues de modificar
+					dtm.getDataVector().removeAllElements();
+					dtm.fireTableDataChanged();
+					for(Usuario usuario1 : usuarios){
+						Object[] fila = new Object[5];
+						fila[0] = usuario1.getNombre();
+						fila[1] = usuario1.getDni();
+						fila[2] = usuario1.getEdad();
+						fila[3] = usuario1.getHobby();					
+						
+						dtm.addRow(fila);
+					}
+                } catch(Exception error) {
+                    JOptionPane.showMessageDialog(null, "Introduce los datos de nuevo");
+                    return;
+                }
+			}
+
+			private Usuario modificarUsuarios() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 				
 		}
 

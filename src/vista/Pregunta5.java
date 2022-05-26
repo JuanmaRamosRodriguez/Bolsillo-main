@@ -78,12 +78,12 @@ public class Pregunta5 extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblFondo2 = new JLabel("");
-		lblFondo2.setIcon(new ImageIcon("C:\\Users\\Juanma\\eclipse-workspace\\Bolsillo-main\\imagenes\\pisarradoramio (2).png"));
+		lblFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
 		lblFondo2.setBounds(-11, 11, 495, 223);
 		contentPane.add(lblFondo2);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\Juanma\\eclipse-workspace\\Bolsillo-main\\imagenes\\clase.jpg"));
+		lblFondo.setIcon(new ImageIcon("imagenes\\clase.jpg"));
 		lblFondo.setBounds(0, 0, 484, 261);
 		contentPane.add(lblFondo);
 	}

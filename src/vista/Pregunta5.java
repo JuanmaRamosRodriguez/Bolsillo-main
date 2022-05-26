@@ -27,7 +27,7 @@ public class Pregunta5 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnOpcion4 = new JButton("Haber estudio!");
+		JButton btnOpcion4 = new JButton("Haber estudiao!");
 		btnOpcion4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();
@@ -38,7 +38,7 @@ public class Pregunta5 extends JFrame {
 		btnOpcion4.setBounds(182, 155, 161, 23);
 		contentPane.add(btnOpcion4);
 		
-		JButton btnOpcion3 = new JButton("Jajaj Salu2");
+		JButton btnOpcion3 = new JButton("Jaja Salu2");
 		btnOpcion3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();

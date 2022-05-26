@@ -43,7 +43,6 @@ public class ModeloUsuario {
     }
     		/*Modifica los datos del Usuario*/
     public void modificarUsuarios(Usuario usuario) {
-
         String nombre = Usuario.getNombre();
         String dni = Usuario.getDni();
         int edad = Usuario.getEdad();

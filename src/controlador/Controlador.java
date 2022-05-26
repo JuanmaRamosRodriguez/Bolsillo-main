@@ -9,7 +9,7 @@ import modelo.ModeloUsuario;
 
 
 public class Controlador {
-			/*Funciones existentes en controlaor*/
+			/*Métodos de usuario*/
 	public static void crearUsuarios(Usuario usuario){
         new ModeloUsuario().crearUsuarios(usuario);
     }

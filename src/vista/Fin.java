@@ -31,6 +31,15 @@ public class Fin extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JButton btnNewButton = new JButton("Fichero");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				/*AQUÍ DEBERÍA DE IR EL FICHERO, PERO NO LO HE CONSEGUIDO METER*/
+			}
+		});
+		btnNewButton.setBounds(36, 183, 89, 23);
+		contentPane.add(btnNewButton);
+		
 		JLabel lblTexto = new JLabel("Felicidades compa\u00F1ero, nos vemos!");
 		lblTexto.setBackground(SystemColor.textText);
 		lblTexto.setForeground(new Color(0, 0, 0));
@@ -55,5 +64,4 @@ public class Fin extends JFrame {
 		lblFondo.setBounds(0, 0, 485, 232);
 		contentPane.add(lblFondo);
 	}
-
 }

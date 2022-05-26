@@ -41,6 +41,8 @@ public class ModeloUsuario {
         }/*Te devuelve usuarios*/
         return usuarios;
     }
+		
+    
     		/*Modifica los datos del Usuario*/
     public void modificarUsuarios(Usuario usuario) {
         String nombre = Usuario.getNombre();

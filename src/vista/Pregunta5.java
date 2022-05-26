@@ -27,55 +27,55 @@ public class Pregunta5 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnOpcion4 = new JButton("Haber estudiao!");
-		btnOpcion4.addActionListener(new ActionListener() {
+		JButton btnHaberEstudiao = new JButton("Haber estudiao!");
+		btnHaberEstudiao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();
 				fin.setVisible(true);
 				dispose();
 			}
 		});
-		btnOpcion4.setBounds(182, 155, 161, 23);
-		contentPane.add(btnOpcion4);
+		btnHaberEstudiao.setBounds(182, 155, 161, 23);
+		contentPane.add(btnHaberEstudiao);
 		
-		JButton btnOpcion3 = new JButton("Jaja Salu2");
-		btnOpcion3.addActionListener(new ActionListener() {
+		JButton btnJajaSalu2 = new JButton("Jaja Salu2");
+		btnJajaSalu2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();
 				fin.setVisible(true);
 				dispose();
 			}
 		});
-		btnOpcion3.setBounds(46, 155, 127, 23);
-		contentPane.add(btnOpcion3);
+		btnJajaSalu2.setBounds(46, 155, 127, 23);
+		contentPane.add(btnJajaSalu2);
 		
-		JButton btnOpcion2 = new JButton("Nos vemos en Junio");
-		btnOpcion2.addActionListener(new ActionListener() {
+		JButton btnNosVemoJunio = new JButton("Nos vemos en Junio");
+		btnNosVemoJunio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();
 				fin.setVisible(true);
 				dispose();
 			}
 		});
-		btnOpcion2.setBounds(182, 121, 161, 23);
-		contentPane.add(btnOpcion2);
+		btnNosVemoJunio.setBounds(182, 121, 161, 23);
+		contentPane.add(btnNosVemoJunio);
 		
-		JButton btnOpcion1 = new JButton("Puede ser..");
-		btnOpcion1.addActionListener(new ActionListener() {
+		JButton btnPuedeSer = new JButton("Puede ser");
+		btnPuedeSer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Fin fin = new Fin();
 				fin.setVisible(true);
 				dispose();
 			}
 		});
-		btnOpcion1.setBounds(46, 121, 126, 23);
-		contentPane.add(btnOpcion1);
+		btnPuedeSer.setBounds(46, 121, 126, 23);
+		contentPane.add(btnPuedeSer);
 		
-		JLabel lblNewLabel = new JLabel("\u00BFMa\u00F1ana ser\u00E1 el \u00FAltimo d\u00EDa de clases?");
-		lblNewLabel.setForeground(new Color(255, 255, 255));
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
-		lblNewLabel.setBounds(46, 56, 313, 24);
-		contentPane.add(lblNewLabel);
+		JLabel lblPregunta = new JLabel("\u00BFMa\u00F1ana ser\u00E1 el \u00FAltimo d\u00EDa de clases?");
+		lblPregunta.setForeground(new Color(255, 255, 255));
+		lblPregunta.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
+		lblPregunta.setBounds(46, 56, 313, 24);
+		contentPane.add(lblPregunta);
 		
 		JLabel lblFondo2 = new JLabel("");
 		lblFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));

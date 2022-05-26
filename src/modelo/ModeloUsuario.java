@@ -8,7 +8,7 @@ import BBDD.conexion;
 import beans.Usuario;
 
 public class ModeloUsuario {
-
+			/*Esto te sirve para crear el usuario*/
     public void crearUsuarios(Usuario usuario) {
     	conexion.conectar();
         String nombre = usuario.getNombre();
@@ -18,12 +18,12 @@ public class ModeloUsuario {
 
         conexion.ejecutarUpdate("INSERT INTO usuario (nombre, dni, edad, hobby) VALUES ('"+nombre+"', '"+dni+"','"+edad+"','"+hobby+"');");
     }
-    
+    		/*Esto te borra el usuario*/
     public void borrarUsuarios() {
     	conexion.ejecutarUpdate("delete from usuario");
     	
     }
-    
+    		/*Aquí refrescamos para ver al usuario*/
     public ArrayList<Usuario> refrescarUsuarios(){
         // TODO: Hacer la petición a BBDD para recoger los usuarios//
         ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
@@ -38,21 +38,17 @@ public class ModeloUsuario {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }/*Te devuelve usuarios*/
         return usuarios;
     }
-
-    public void borrarUsuarios(String Usuario) {
-        conexion.ejecutarUpdate("DELETE FROM usuarios WHERE usuario="+Usuario+";");
-    }
-
+    		/*Modifica los datos del Usuario*/
     public void modificarUsuarios(Usuario usuario) {
 
         String nombre = Usuario.getNombre();
         String dni = Usuario.getDni();
         int edad = Usuario.getEdad();
         String hobby = Usuario.getHobby();
-
-        conexion.ejecutarUpdate("UPDATE Usuario SET usuario='"+nombre+"','"+dni+"','"+edad+"','"+hobby+"");
+        	/*Sentencia que modifica usuario*/
+        conexion.ejecutarUpdate("UPDATE USUARIO SET nombre='"+nombre+"', dni='"+dni+"', edad='"+edad+"', hobby ='"+hobby+"'  WHERE nombre = '"+nombre+"';");
     }
 }

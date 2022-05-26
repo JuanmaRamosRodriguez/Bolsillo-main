@@ -22,7 +22,7 @@ import javax.swing.JSeparator;
 import java.awt.Color;
 
 public class Inicio extends JFrame {
-
+			/*Atributos*/
 	private JPanel contentPane;
 	private JTextField campoNombre;
 	private JTextField campoDNI;
@@ -110,7 +110,7 @@ public class Inicio extends JFrame {
 		JLabel labelHobby = new JLabel("Hobby");
 		labelHobby.setBounds(20, 175, 46, 14);
 		contentPane.add(labelHobby);
-		
+				/*Botón para entrar y jugar*/
 		JButton entrar = new JButton("Jugar");
 		entrar.setBounds(60, 216, 69, 23);
 		contentPane.add(entrar);

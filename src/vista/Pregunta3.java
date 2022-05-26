@@ -39,58 +39,58 @@ public class Pregunta3 extends JFrame {
 		btnChewbbaca.setBounds(209, 169, 111, 26);
 		contentPane.add(btnChewbbaca);
 		
-		JButton btnShubbaca = new JButton("Xiwaka");
-		btnShubbaca.addActionListener(new ActionListener() {
+		JButton btnXiwaka = new JButton("Xiwaka");
+		btnXiwaka.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnShubbaca.setBounds(209, 133, 111, 25);
-		contentPane.add(btnShubbaca);
+		btnXiwaka.setBounds(209, 133, 111, 25);
+		contentPane.add(btnXiwaka);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon("imagenes\\chewbacca.jpg"));
 		lblNewLabel_2.setBounds(155, 61, 100, 61);
 		contentPane.add(lblNewLabel_2);
 		
-		JButton botonVerdadero = new JButton("Chewvacca");
-		botonVerdadero.addActionListener(new ActionListener() {
+		JButton btnChewvacca = new JButton("Chewvacca");
+		btnChewvacca.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		botonVerdadero.setBounds(81, 132, 106, 26);
-		contentPane.add(botonVerdadero);
+		btnChewvacca.setBounds(81, 132, 106, 26);
+		contentPane.add(btnChewvacca);
 		
-		JButton botonFalso = new JButton("Chewbacca");
-		botonFalso.addActionListener(new ActionListener() {
+		JButton btnChewbacca = new JButton("Chewbacca");
+		btnChewbacca.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Pregunta4 pregunta4 = new Pregunta4();
 				pregunta4.setVisible(true);
 				dispose();
 			}
 		});
-		botonFalso.setBounds(81, 169, 106, 26);
-		contentPane.add(botonFalso);
+		btnChewbacca.setBounds(81, 169, 106, 26);
+		contentPane.add(btnChewbacca);
 		
-		JLabel labelPreguntaUno = new JLabel("\u00BFC\u00F3mo se escribe el nombre de este ser?");
-		labelPreguntaUno.setForeground(Color.WHITE);
-		labelPreguntaUno.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
-		labelPreguntaUno.setBounds(71, 37, 300, 26);
-		contentPane.add(labelPreguntaUno);
+		JLabel lblPregunta = new JLabel("\u00BFC\u00F3mo se escribe el nombre de este ser?");
+		lblPregunta.setForeground(Color.WHITE);
+		lblPregunta.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblPregunta.setBounds(71, 37, 300, 26);
+		contentPane.add(lblPregunta);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
-		lblNewLabel_1.setBounds(0, 11, 484, 228);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblFondo2 = new JLabel("");
+		lblFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
+		lblFondo2.setBounds(0, 11, 484, 228);
+		contentPane.add(lblFondo2);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("imagenes\\clase.jpg"));
-		lblNewLabel.setBounds(0, 0, 484, 261);
-		contentPane.add(lblNewLabel);
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon("imagenes\\clase.jpg"));
+		lblFondo.setBounds(0, 0, 484, 261);
+		contentPane.add(lblFondo);
 	}
 }

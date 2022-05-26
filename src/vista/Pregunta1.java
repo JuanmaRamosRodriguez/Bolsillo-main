@@ -74,20 +74,20 @@ public class Pregunta1 extends JFrame {
 		botonVerde.setBounds(114, 143, 89, 26);
 		contentPane.add(botonVerde);
 		
-		JLabel labelPreguntaUno = new JLabel("\u00BFDe qu\u00E9 color era Doraemon originalmente?");
-		labelPreguntaUno.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
-		labelPreguntaUno.setForeground(Color.WHITE);
-		labelPreguntaUno.setBounds(64, 58, 320, 27);
-		contentPane.add(labelPreguntaUno);
+		JLabel labelPregunta = new JLabel("\u00BFDe qu\u00E9 color era Doraemon originalmente?");
+		labelPregunta.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		labelPregunta.setForeground(Color.WHITE);
+		labelPregunta.setBounds(64, 58, 320, 27);
+		contentPane.add(labelPregunta);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
-		lblNewLabel.setBounds(0, 11, 484, 234);
-		contentPane.add(lblNewLabel);
+		JLabel lblFondo2 = new JLabel("");
+		lblFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
+		lblFondo2.setBounds(0, 11, 484, 234);
+		contentPane.add(lblFondo2);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("imagenes\\clase.jpg"));
-		lblNewLabel_1.setBounds(0, 0, 484, 260);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblFondo1 = new JLabel("");
+		lblFondo1.setIcon(new ImageIcon("imagenes\\clase.jpg"));
+		lblFondo1.setBounds(0, 0, 484, 260);
+		contentPane.add(lblFondo1);
 	}
 }

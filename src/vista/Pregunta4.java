@@ -26,64 +26,64 @@ public class Pregunta4 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton_3 = new JButton("11.2.11");
-		btnNewButton_3.addActionListener(new ActionListener() {
+		JButton btn4 = new JButton("11.2.11");
+		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnNewButton_3.setBounds(194, 137, 89, 23);
-		contentPane.add(btnNewButton_3);
+		btn4.setBounds(194, 137, 89, 23);
+		contentPane.add(btn4);
 		
-		JButton btnNewButton_2 = new JButton("11.0.11");
-		btnNewButton_2.addActionListener(new ActionListener() {
+		JButton btn3 = new JButton("11.0.11");
+		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Pregunta5 pregunta5 = new Pregunta5();
 				pregunta5.setVisible(true);
 				dispose();
 			}
 		});
-		btnNewButton_2.setBounds(78, 137, 89, 23);
-		contentPane.add(btnNewButton_2);
+		btn3.setBounds(78, 137, 89, 23);
+		contentPane.add(btn3);
 		
-		JButton btnNewButton_1 = new JButton("11.1.01");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton btn2 = new JButton("11.1.01");
+		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnNewButton_1.setBounds(194, 103, 89, 23);
-		contentPane.add(btnNewButton_1);
+		btn2.setBounds(194, 103, 89, 23);
+		contentPane.add(btn2);
 		
-		JButton btnNewButton = new JButton("11.1.11");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btn1 = new JButton("11.1.11");
+		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnNewButton.setBounds(78, 103, 89, 23);
-		contentPane.add(btnNewButton);
+		btn1.setBounds(78, 103, 89, 23);
+		contentPane.add(btn1);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u00BFQu\u00E9 versi\u00F3n de java estamos usando en clase?");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 12));
-		lblNewLabel_2.setForeground(Color.WHITE);
-		lblNewLabel_2.setBounds(57, 54, 304, 38);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblPregunta = new JLabel("\u00BFQu\u00E9 versi\u00F3n de java estamos usando en clase?");
+		lblPregunta.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 12));
+		lblPregunta.setForeground(Color.WHITE);
+		lblPregunta.setBounds(57, 54, 304, 38);
+		contentPane.add(lblPregunta);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Juanma\\eclipse-workspace\\Bolsillo-main\\imagenes\\pisarradoramio (2).png"));
-		lblNewLabel_1.setBounds(-10, 21, 494, 210);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblFondo2 = new JLabel("");
+		lblFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
+		lblFondo2.setBounds(-10, 21, 494, 210);
+		contentPane.add(lblFondo2);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Juanma\\eclipse-workspace\\Bolsillo-main\\imagenes\\clase.jpg"));
-		lblNewLabel.setBounds(0, 0, 484, 261);
-		contentPane.add(lblNewLabel);
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon("imagenes\\clase.jpg"));
+		lblFondo.setBounds(0, 0, 484, 261);
+		contentPane.add(lblFondo);
 	}
 }

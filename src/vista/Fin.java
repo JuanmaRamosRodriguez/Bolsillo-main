@@ -38,16 +38,16 @@ public class Fin extends JFrame {
 		lblTexto.setBounds(10, 24, 451, 31);
 		contentPane.add(lblTexto);
 		
-		JButton btnSalir = new JButton("Salir");
-		btnSalir.addActionListener(new ActionListener() {
+		JButton btnSiguiente = new JButton("Siguiente");
+		btnSiguiente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				PanelFinal panelFinal= new PanelFinal();
 				panelFinal.setVisible(true);
 				dispose();
 			}
 		});
-		btnSalir.setBounds(326, 183, 89, 23);
-		contentPane.add(btnSalir);
+		btnSiguiente.setBounds(326, 183, 89, 23);
+		contentPane.add(btnSiguiente);
 		
 		JLabel lblFondo = new JLabel("");
 		lblFondo.setToolTipText("");

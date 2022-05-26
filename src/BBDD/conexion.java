@@ -4,7 +4,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class conexion {
-
+			/*Conexión a la base de datos*/
     static String timeZone = "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     static String dbName = "proyecto";
     static String host = "localhost";
@@ -17,7 +17,8 @@ public class conexion {
     static Connection conexion;
     static Statement consulta;
     static ResultSet resultado;
-
+    			
+    		/*Función conectar*/
     public static void conectar(){
         try {
             Class.forName(driver) ;
@@ -29,7 +30,7 @@ public class conexion {
         e.printStackTrace();
       }
     }
-
+    		/*Función de ejecutar la sentencia*/
     public static ResultSet ejecutarSentencia(String sentencia){
       try {
         resultado = consulta.executeQuery(sentencia);
@@ -39,17 +40,18 @@ public class conexion {
       }
       return resultado;
     }
-
+    		
+    		/*Actualiza la sentencia*/ 
     public static void ejecutarUpdate(String sentencia){
         try{
             consulta.executeUpdate(sentencia);
             System.out.println("Done: " + sentencia);
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null, e.getMessage());
-        System.out.println("Error: " + sentencia);
+      
         } 
     }
-
+    		/*Esto cerraría la consulta a BBDD*/
     public static void cerrar(){
       try{
         consulta.close();

@@ -1,11 +1,14 @@
 package beans;
-
+		
+		/*Clase Usuario*/
 public class Usuario {
+		/*Atributos de la clase*/
 	private static String nombre;
 	private static String dni;
 	private static int edad;
 	private static String hobby;
 	
+		/*Constructor de la clase Usuario*/
 	public Usuario(String nombre, String dni, int edad, String hobby) {
 		this.nombre = nombre;
 		this.dni = dni;
@@ -16,6 +19,7 @@ public class Usuario {
 	public static String getNombre() {
 		return nombre;
 		
+		/*Getters y Setters de Usuario*/
 	}
 	public static void setNombre(String nombre) {
 		Usuario.nombre = nombre;

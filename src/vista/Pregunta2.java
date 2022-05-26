@@ -27,65 +27,65 @@ public class Pregunta2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnAlemn = new JButton("Espa\u00F1ol");
-		btnAlemn.addActionListener(new ActionListener() {
+		JButton btnEspañol = new JButton("Espa\u00F1ol");
+		btnEspañol.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnAlemn.setBounds(215, 117, 126, 27);
-		contentPane.add(btnAlemn);
+		btnEspañol.setBounds(215, 117, 126, 27);
+		contentPane.add(btnEspañol);
 		
-		JButton btnFrancs = new JButton("Franc\u00E9s");
-		btnFrancs.addActionListener(new ActionListener() {
+		JButton btnFrances = new JButton("Franc\u00E9s");
+		btnFrances.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnFrancs.setBounds(81, 155, 124, 27);
-		contentPane.add(btnFrancs);
+		btnFrances.setBounds(81, 155, 124, 27);
+		contentPane.add(btnFrances);
 		
-		JButton btnB = new JButton("Chino Mandar\u00EDn");
-		btnB.addActionListener(new ActionListener() {
+		JButton btnChinoMandarin = new JButton("Chino Mandar\u00EDn");
+		btnChinoMandarin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Pregunta3 pregunta3 = new Pregunta3();
 				pregunta3.setVisible(true);
 				dispose();
 			}
 		});
-		btnB.setBounds(215, 155, 126, 27);
-		contentPane.add(btnB);
+		btnChinoMandarin.setBounds(215, 155, 126, 27);
+		contentPane.add(btnChinoMandarin);
 		
-		JButton btnNewButton = new JButton("Ingl\u00E9s");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnIngles = new JButton("Ingl\u00E9s");
+		btnIngles.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Intermedio intermedio = new Intermedio();
 				intermedio.setVisible(true);
 				dispose();
 			}
 		});
-		btnNewButton.setBounds(81, 117, 126, 27);
-		contentPane.add(btnNewButton);
+		btnIngles.setBounds(81, 117, 126, 27);
+		contentPane.add(btnIngles);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("\u00BFCu\u00E1l es el idioma m\u00E1s hablado del mundo?");
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
-		lblNewLabel_1_1.setForeground(Color.WHITE);
-		lblNewLabel_1_1.setBounds(44, 66, 331, 27);
-		contentPane.add(lblNewLabel_1_1);
+		JLabel lblPregunta = new JLabel("\u00BFCu\u00E1l es el idioma m\u00E1s hablado del mundo?");
+		lblPregunta.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblPregunta.setForeground(Color.WHITE);
+		lblPregunta.setBounds(44, 66, 331, 27);
+		contentPane.add(lblPregunta);
 		
-		JLabel labelFondo = new JLabel("");
-		labelFondo.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
-		labelFondo.setBounds(0, 0, 484, 261);
-		contentPane.add(labelFondo);
+		JLabel labelFondo2 = new JLabel("");
+		labelFondo2.setIcon(new ImageIcon("imagenes\\pisarradoramio (2).png"));
+		labelFondo2.setBounds(0, 0, 484, 261);
+		contentPane.add(labelFondo2);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("imagenes\\clase.jpg"));
-		lblNewLabel_1.setBounds(0, 0, 484, 261);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblFondo1 = new JLabel("");
+		lblFondo1.setIcon(new ImageIcon("imagenes\\clase.jpg"));
+		lblFondo1.setBounds(0, 0, 484, 261);
+		contentPane.add(lblFondo1);
 	}
 
 }

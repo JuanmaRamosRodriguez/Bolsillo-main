@@ -25,7 +25,7 @@ public class PanelFinal extends JFrame {
 	private JPanel contentPane;
 	private JButton btnNewButto;
 	private JTable table;
-	private JLabel lblNewLabel;
+	private JLabel lblTexto;
 	private JButton btnSalirDelJuego;
 	private JButton btnModificarUsuario;
 
@@ -70,12 +70,12 @@ public class PanelFinal extends JFrame {
 		btnRefrescar.setBounds(119, 194, 93, 23);
 		contentPane.add(btnRefrescar);
 		
-		lblNewLabel = new JLabel("\u00DAltimo jugador que acert\u00F3 todas las preguntas");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
-		lblNewLabel.setBounds(44, 171, 369, 23);
-		contentPane.add(lblNewLabel);
+		lblTexto = new JLabel("\u00DAltimo jugador que acert\u00F3 todas las preguntas");
+		lblTexto.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblTexto.setBounds(44, 171, 369, 23);
+		contentPane.add(lblTexto);
 		
-		btnSalirDelJuego = new JButton("Salirdel juego");
+		btnSalirDelJuego = new JButton("Salir del juego");
 		btnSalirDelJuego.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(WIDTH);
@@ -92,19 +92,13 @@ public class PanelFinal extends JFrame {
 		btnModificarUsuario.setBounds(235, 194, 89, 23);
 		contentPane.add(btnModificarUsuario);
 		
-		
-		
-		
-		
-		
-		
 		btnModificarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Usuario usuario = modificarUsuarios();
                     new Controlador().modificarUsuario(usuario);
                     
-                    ArrayList<Usuario> usuarios = new Controlador().borrarUsuarios();
+                    ArrayList<Usuario> usuarios = new Controlador().refrescartodosUsuarios();
                     
                     //Refrescar la tabla automaticamente despues de modificar
 					dtm.getDataVector().removeAllElements();
